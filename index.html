@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Equalizer using range slider</title>
+
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="bandRange">
+		<div>12 db </div>
+		<div class="midRange">0</div>
+		<div class="midRange">-12 db </div>
+	</div>
+<div class="bandSection">
+	<div class="slider vertical firstBand" data-slider data-initial-start="6"  data-start=0 data-end=12 data-vertical="true">
+	  <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+	  <span class="slider-fill" data-slider-fill></span>
+	  <input type="hidden">
+	</div>
+	<span class="frequency">60</span>
+	<div class="slider vertical secondBand" data-slider data-initial-start="6"  data-start="0" data-end="12" data-vertical="true">
+	  <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+	  <span class="slider-fill" data-slider-fill></span>
+	  <input type="hidden">
+	</div>
+	<span class="frequency">310</span>
+	<div class="slider vertical thirdBand" data-slider data-initial-start="6"  data-start="0" data-end="12" data-vertical="true">
+	  <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+	  <span class="slider-fill" data-slider-fill></span>
+	  <input type="hidden">
+	</div>
+	<span class="frequency">1k</span>
+	<div class="slider vertical fourthBand" data-slider data-initial-start="6"  data-start="0" data-end="12" data-vertical="true">
+	  <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+	  <span class="slider-fill" data-slider-fill></span>
+	  <input type="hidden">
+	</div>
+	<span class="frequency">6k</span>
+	<div class="slider vertical fifthBand" data-slider data-initial-start="6"  data-start="0" data-end="12" data-vertical="true">
+	  <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+	  <span class="slider-fill" data-slider-fill></span>
+	  <input type="hidden">
+	</div>
+	<span class="frequency">16k</span>
+</div>
+
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Preset
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#" bandKey="rock" class="bandSelect">Rock</a></li>
+    <li><a href="#" bandKey="pop" class="bandSelect">Pop</a></li>
+    <li><a href="#" bandKey="jazz" class="bandSelect">Jazz</a></li>
+    <li><a href="#" bandKey="classical" class="bandSelect">Classical</a></li>
+  </ul>
+</div>
+
+</div>
+
+
+  <!-- Other JS plugins can be included here -->
+  <script src="js/vendor/jquery.js"></script>
+  	<script src="js/vendor/foundation.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="js/app.js"></script>
+</body>
+</html>

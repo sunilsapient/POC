@@ -1,0 +1,27 @@
+.wrapper {
+	margin: 20px;
+	width: 40%;
+}
+.bandSection,.bandRange {
+	float: left;
+}
+.vertical,.slider-fill {
+	background-color: yellow;
+}
+.slider-handle {
+	background-color: gray;
+}
+.midRange {
+	margin-top: 31px;
+}
+.frequency {
+	position: relative;
+	left: -31px;
+	top: 15px;
+}
+.dropdown {
+	float: right;
+}
+.slider.vertical {
+	width: 1.5rem;
+}
